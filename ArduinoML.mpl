@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="ArduinoML" uuid="f8b773e1-d0f0-4661-921f-6947817e6339">
+<language namespace="ArduinoML" uuid="58949ab6-fc97-477d-a40f-e22c363ad196">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot path="${module}/languageModels" />
@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="ArduinoML#1591981617079191408" uuid="ccb78b1e-7ca1-46b0-a549-ddc02ec2b7d1">
+    <generator generatorUID="ArduinoML#1591981617079247175" uuid="d34bb199-099f-4dfe-a2de-7ef6bf9eb6fe">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot path="${module}/generator/template" />
@@ -15,7 +15,7 @@
       </models>
       <external-templates />
       <usedLanguages>
-        <usedLanguage>f8b773e1-d0f0-4661-921f-6947817e6339(ArduinoML)</usedLanguage>
+        <usedLanguage>58949ab6-fc97-477d-a40f-e22c363ad196(ArduinoML)</usedLanguage>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
       </usedLanguages>
