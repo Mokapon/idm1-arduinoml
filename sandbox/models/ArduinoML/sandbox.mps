@@ -7,7 +7,6 @@
   <import index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="8" implicit="yes" />
   <root type="7lh2.Sketch" typeId="7lh2.2797755123794349356" id="2797755123794742115" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="newSketch" />
-    <property name="initialState" nameId="7lh2.2797755123794791587" value="init" />
     <node role="states" roleId="7lh2.2797755123794736525" type="7lh2.State" typeId="7lh2.2797755123794647127" id="2797755123794742116" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="init" />
       <node role="transitions" roleId="7lh2.2797755123794791620" type="7lh2.Transition" typeId="7lh2.2797755123794647173" id="2797755123794942131" nodeInfo="ng">
