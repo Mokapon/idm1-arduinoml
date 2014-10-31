@@ -54,5 +54,41 @@
     </dependencies>
     <rename id="7lh2.2797755123794774336" type="CHILD" from="results" to="actions" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="8" />
+    </dependencies>
+    <rename id="7lh2.8204163728062067645" type="REFERENCE" from="stats" to="state" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="9" />
+    </dependencies>
+    <rename id="7lh2.2797755123794766767" type="CONCEPT" from="InputEvent" to="Event" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="10" />
+    </dependencies>
+    <rename id="7lh2.2797755123794770364" type="CONCEPT" from="LowInputEvent" to="LowEvent" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="11" />
+    </dependencies>
+    <rename id="7lh2.2797755123794770455" type="CONCEPT" from="HighInputEvent" to="HighEvent" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="12" />
+    </dependencies>
+    <rename id="7lh2.8204163728062361270" type="CONCEPT" from="InputEvent" to="Event" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="13" />
+    </dependencies>
+    <rename id="7lh2.8204163728062375913" type="CONCEPT" from="InputEventReference" to="OutputEventReference" />
+  </StructureModification>
 </history>
 
