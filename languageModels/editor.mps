@@ -46,7 +46,7 @@
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2797755123794928775" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="triggers : [" />
+        <property name="text" nameId="tpc2.1073389577007" value="triggers : {" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutIndentStyleClassItem" typeId="tpc2.1237307900041" id="2797755123794990988" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
@@ -59,10 +59,10 @@
         <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="8204163728062399610" nodeInfo="nn" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8204163728062572594" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="]" />
+        <property name="text" nameId="tpc2.1073389577007" value="}" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2797755123794928867" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="actions : [" />
+        <property name="text" nameId="tpc2.1073389577007" value="actions : {" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutOnNewLineStyleClassItem" typeId="tpc2.1237385578942" id="2797755123794991060" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
@@ -75,9 +75,6 @@
         <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="8204163728062572916" nodeInfo="nn" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8204163728062572778" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="]" />
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2797755123794928870" nodeInfo="nn">
         <property name="text" nameId="tpc2.1073389577007" value="}" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2797755123794990915" nodeInfo="nn">
