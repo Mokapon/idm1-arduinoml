@@ -90,5 +90,23 @@
     </dependencies>
     <rename id="7lh2.8204163728062375913" type="CONCEPT" from="InputEventReference" to="OutputEventReference" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="14" />
+    </dependencies>
+    <rename id="7lh2.3146970967281169613" type="REFERENCE" from="initS" to="initState" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="15" />
+    </dependencies>
+    <rename id="7lh2.1557391422455299271" type="CHILD" from="ra" to="actions" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="16" />
+    </dependencies>
+    <rename id="7lh2.6639211919511423363" type="CONCEPT" from="InputEvent" to="LolEvent" />
+  </StructureModification>
 </history>
 

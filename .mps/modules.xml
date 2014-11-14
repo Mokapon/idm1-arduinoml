@@ -3,6 +3,8 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/ArduinoML.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/MorseML/MorseML.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/MorseML/sandbox/MorseML.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/sandbox/ArduinoML.sandbox.msd" folder="" />
     </projectModules>
   </component>

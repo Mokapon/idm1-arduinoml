@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="3f30" modelUID="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)" version="-1" />
+    </dependencies>
+    <rename id="3f30.6639211919511863349" type="CONCEPT" from="Ouput" to="Output" />
+  </StructureModification>
+</history>
+
