@@ -33,13 +33,14 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="225294716811549436" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="S" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="A" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="A" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="S" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="S" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4695478995407259091" resolveInfo="Letter" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="225294716811710047" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="O" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="B" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="O" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="O" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4695478995407259091" resolveInfo="Letter" />
   </root>
 </model>

@@ -7,7 +7,9 @@
   <import index="3f30" modelUID="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)" version="5" implicit="yes" />
   <root type="3f30.MorseScript" typeId="3f30.6639211919511864186" id="225294716822117594" nodeInfo="ng">
     <property name="output" nameId="3f30.225294716811500096" value="12" />
-    <node role="letters" roleId="3f30.225294716811556654" type="3f30.S" typeId="3f30.225294716811549436" id="225294716822117649" nodeInfo="ng" />
+    <node role="letters" roleId="3f30.225294716811556654" type="3f30.S" typeId="3f30.225294716811549436" id="4805029767574754140" nodeInfo="ng" />
+    <node role="letters" roleId="3f30.225294716811556654" type="3f30.O" typeId="3f30.225294716811710047" id="4805029767574754146" nodeInfo="ng" />
+    <node role="letters" roleId="3f30.225294716811556654" type="3f30.S" typeId="3f30.225294716811549436" id="4805029767574754174" nodeInfo="ng" />
   </root>
 </model>
 

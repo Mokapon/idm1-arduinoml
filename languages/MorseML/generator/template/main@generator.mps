@@ -150,14 +150,14 @@
     </node>
     <node role="states" roleId="7lh2.2797755123794736525" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="225294716828997054" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="end" />
-      <property name="duration" nameId="7lh2.6639211919511842967" value="1000" />
+      <property name="duration" nameId="7lh2.6639211919511842967" value="2000" />
       <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="225294716829002963" nodeInfo="ng">
         <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="4458279790004330396" resolveInfo="output_low" />
       </node>
     </node>
     <node role="states" roleId="7lh2.2797755123794736525" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="225294716827952952" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="transition" />
-      <property name="duration" nameId="7lh2.6639211919511842967" value="1000" />
+      <property name="duration" nameId="7lh2.6639211919511842967" value="1500" />
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="225294716827959138" nodeInfo="nn">
         <property name="propertyName" nameId="tpck.1757699476691236117" value="name" />
         <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="225294716827959139" nodeInfo="nn">
@@ -316,8 +316,8 @@
       <link role="source" roleId="7lh2.1293812887158123405" targetNodeId="225294716827952952" resolveInfo="transition" />
       <link role="target" roleId="7lh2.1293812887161528407" targetNodeId="225294716816103707" resolveInfo="O" />
       <node role="outputsTransitions" roleId="7lh2.1293812887161528401" type="7lh2.MacroOutputReference" typeId="7lh2.8537481231380241752" id="225294716828963312" nodeInfo="ng">
-        <link role="source" roleId="7lh2.8537481231380241782" targetNodeId="225294716816103713" resolveInfo="O_end" />
         <link role="target" roleId="7lh2.8537481231380241780" targetNodeId="225294716827952952" resolveInfo="transition" />
+        <link role="source" roleId="7lh2.8537481231380241782" targetNodeId="4805029767573967342" resolveInfo="O_end" />
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.ReferenceMacro" typeId="tpf8.1088761943574" id="225294716828972719" nodeInfo="nn">
           <property name="linkRole" nameId="tpck.1757699476691236116" value="source" />
           <node role="referentFunction" roleId="tpf8.1167770376702" type="tpf8.ReferenceMacro_GetReferent" typeId="tpf8.1167770111131" id="225294716828972720" nodeInfo="nn">
@@ -562,28 +562,42 @@
       <link role="inputState" roleId="7lh2.8537481231377264205" targetNodeId="225294716816471772" resolveInfo="S_1" />
       <node role="states" roleId="7lh2.8537481231377188753" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="225294716816471772" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="S_1" />
-        <property name="duration" nameId="7lh2.6639211919511842967" value="1000" />
+        <property name="duration" nameId="7lh2.6639211919511842967" value="500" />
         <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="225294716816471776" nodeInfo="ng">
           <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="4458279790004348550" resolveInfo="output_high" />
         </node>
       </node>
       <node role="states" roleId="7lh2.8537481231377188753" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="225294716816471800" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="S_2" />
-        <property name="duration" nameId="7lh2.6639211919511842967" value="1000" />
+        <property name="duration" nameId="7lh2.6639211919511842967" value="500" />
         <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="225294716816471820" nodeInfo="ng">
           <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="4458279790004330396" resolveInfo="output_low" />
         </node>
       </node>
       <node role="states" roleId="7lh2.8537481231377188753" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="225294716816471812" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="S_3" />
-        <property name="duration" nameId="7lh2.6639211919511842967" value="1000" />
+        <property name="duration" nameId="7lh2.6639211919511842967" value="500" />
         <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="225294716816471813" nodeInfo="ng">
+          <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="4458279790004348550" resolveInfo="output_high" />
+        </node>
+      </node>
+      <node role="states" roleId="7lh2.8537481231377188753" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="4805029767573785307" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="S_4" />
+        <property name="duration" nameId="7lh2.6639211919511842967" value="500" />
+        <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="4805029767573804484" nodeInfo="ng">
+          <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="4458279790004330396" resolveInfo="output_low" />
+        </node>
+      </node>
+      <node role="states" roleId="7lh2.8537481231377188753" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="4805029767573804496" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="S_5" />
+        <property name="duration" nameId="7lh2.6639211919511842967" value="500" />
+        <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="4805029767573804507" nodeInfo="ng">
           <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="4458279790004348550" resolveInfo="output_high" />
         </node>
       </node>
       <node role="outputs" roleId="7lh2.8537481231377213635" type="7lh2.MacroTimedOutput" typeId="7lh2.8537481231377264202" id="225294716816471823" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="S_end" />
-        <link role="source" roleId="7lh2.8537481231377264203" targetNodeId="225294716816471812" resolveInfo="S_3" />
+        <link role="source" roleId="7lh2.8537481231377264203" targetNodeId="4805029767573804496" resolveInfo="S_5" />
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="225294716815364849" nodeInfo="ng" />
       <node role="transitions" roleId="7lh2.8537481231377188755" type="7lh2.TimedStateToState" typeId="7lh2.8716409480408634813" id="225294716816835667" nodeInfo="ng">
@@ -594,6 +608,14 @@
         <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="225294716816471800" resolveInfo="S_2" />
         <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="225294716816471812" resolveInfo="S_3" />
       </node>
+      <node role="transitions" roleId="7lh2.8537481231377188755" type="7lh2.TimedStateToState" typeId="7lh2.8716409480408634813" id="4805029767573956478" nodeInfo="ng">
+        <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="225294716816471812" resolveInfo="S_3" />
+        <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="4805029767573785307" resolveInfo="S_4" />
+      </node>
+      <node role="transitions" roleId="7lh2.8537481231377188755" type="7lh2.TimedStateToState" typeId="7lh2.8716409480408634813" id="4805029767573956488" nodeInfo="ng">
+        <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="4805029767573785307" resolveInfo="S_4" />
+        <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="4805029767573804496" resolveInfo="S_5" />
+      </node>
     </node>
   </root>
   <root type="tpf8.TemplateDeclaration" typeId="tpf8.1092059087312" id="225294716816103602" nodeInfo="ng">
@@ -601,15 +623,63 @@
     <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="3f30.225294716811710047" resolveInfo="O" />
     <node role="contentNode" roleId="tpf8.1092060348987" type="7lh2.Macro" typeId="7lh2.8537481231377161534" id="225294716816103707" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="O" />
-      <link role="inputState" roleId="7lh2.8537481231377264205" targetNodeId="225294716816103709" resolveInfo="O_1" />
-      <node role="states" roleId="7lh2.8537481231377188753" type="7lh2.State" typeId="7lh2.2797755123794647127" id="225294716816103709" nodeInfo="ng">
+      <link role="inputState" roleId="7lh2.8537481231377264205" targetNodeId="4805029767573961916" resolveInfo="O_1" />
+      <node role="states" roleId="7lh2.8537481231377188753" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="4805029767573961916" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="O_1" />
+        <property name="duration" nameId="7lh2.6639211919511842967" value="1500" />
+        <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="4805029767573961946" nodeInfo="ng">
+          <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="4458279790004348550" resolveInfo="output_high" />
+        </node>
       </node>
-      <node role="outputs" roleId="7lh2.8537481231377213635" type="7lh2.MacroBasicOutput" typeId="7lh2.8537481231377264148" id="225294716816103713" nodeInfo="ng">
+      <node role="states" roleId="7lh2.8537481231377188753" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="4805029767573961922" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="O_2" />
+        <property name="duration" nameId="7lh2.6639211919511842967" value="500" />
+        <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="4805029767573961948" nodeInfo="ng">
+          <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="4458279790004330396" resolveInfo="output_low" />
+        </node>
+      </node>
+      <node role="states" roleId="7lh2.8537481231377188753" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="4805029767573961936" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="O_3" />
+        <property name="duration" nameId="7lh2.6639211919511842967" value="1500" />
+        <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="4805029767573961950" nodeInfo="ng">
+          <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="4458279790004348550" resolveInfo="output_high" />
+        </node>
+      </node>
+      <node role="states" roleId="7lh2.8537481231377188753" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="4805029767573961976" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="O_4" />
+        <property name="duration" nameId="7lh2.6639211919511842967" value="500" />
+        <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="4805029767573961985" nodeInfo="ng">
+          <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="4458279790004330396" resolveInfo="output_low" />
+        </node>
+      </node>
+      <node role="states" roleId="7lh2.8537481231377188753" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="4805029767573961997" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="O_5" />
+        <property name="duration" nameId="7lh2.6639211919511842967" value="1500" />
+        <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="4805029767573962008" nodeInfo="ng">
+          <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="4458279790004348550" resolveInfo="output_high" />
+        </node>
+      </node>
+      <node role="outputs" roleId="7lh2.8537481231377213635" type="7lh2.MacroTimedOutput" typeId="7lh2.8537481231377264202" id="4805029767573967342" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="O_end" />
-        <link role="source" roleId="7lh2.8537481231377264149" targetNodeId="225294716816103709" resolveInfo="O_1" />
+        <link role="source" roleId="7lh2.8537481231377264203" targetNodeId="4805029767573961997" resolveInfo="O_5" />
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="225294716816103715" nodeInfo="ng" />
+      <node role="transitions" roleId="7lh2.8537481231377188755" type="7lh2.TimedStateToState" typeId="7lh2.8716409480408634813" id="4805029767573962281" nodeInfo="ng">
+        <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="4805029767573961916" resolveInfo="O_1" />
+        <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="4805029767573961922" resolveInfo="O_2" />
+      </node>
+      <node role="transitions" roleId="7lh2.8537481231377188755" type="7lh2.TimedStateToState" typeId="7lh2.8716409480408634813" id="4805029767573966766" nodeInfo="ng">
+        <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="4805029767573961922" resolveInfo="O_2" />
+        <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="4805029767573961936" resolveInfo="O_3" />
+      </node>
+      <node role="transitions" roleId="7lh2.8537481231377188755" type="7lh2.TimedStateToState" typeId="7lh2.8716409480408634813" id="4805029767573966774" nodeInfo="ng">
+        <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="4805029767573961936" resolveInfo="O_3" />
+        <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="4805029767573961976" resolveInfo="O_4" />
+      </node>
+      <node role="transitions" roleId="7lh2.8537481231377188755" type="7lh2.TimedStateToState" typeId="7lh2.8716409480408634813" id="4805029767573966786" nodeInfo="ng">
+        <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="4805029767573961976" resolveInfo="O_4" />
+        <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="4805029767573961997" resolveInfo="O_5" />
+      </node>
     </node>
   </root>
 </model>
