@@ -139,7 +139,18 @@
   </root>
   <root type="7lh2.Sketch" typeId="7lh2.2797755123794349356" id="4695478995403947376" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Alphabet" />
+    <link role="initState" roleId="7lh2.3146970967281169613" targetNodeId="4695478995407324742" resolveInfo="start" />
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.RootTemplateAnnotation" typeId="tpf8.1168619357332" id="4695478995403947378" nodeInfo="ng" />
+    <node role="macros" roleId="7lh2.8537481231377265311" type="7lh2.Macro" typeId="7lh2.8537481231377161534" id="4695478995407324684" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="A" />
+      <link role="inputState" roleId="7lh2.8537481231377264205" targetNodeId="4695478995407324685" resolveInfo="A_1" />
+      <node role="states" roleId="7lh2.8537481231377188753" type="7lh2.State" typeId="7lh2.2797755123794647127" id="4695478995407324685" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="A_1" />
+      </node>
+    </node>
+    <node role="states" roleId="7lh2.2797755123794736525" type="7lh2.State" typeId="7lh2.2797755123794647127" id="4695478995407324742" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="start" />
+    </node>
   </root>
 </model>
 

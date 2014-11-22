@@ -6,6 +6,10 @@
     </modelRoot>
   </models>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">58949ab6-fc97-477d-a40f-e22c363ad196(ArduinoML)</dependency>
+    <dependency reexport="false">4b39556e-830a-4fa9-820a-34c5ad27b9ad(ArduinoML.sandbox)</dependency>
+  </dependencies>
   <usedLanguages>
     <usedLanguage>58949ab6-fc97-477d-a40f-e22c363ad196(ArduinoML)</usedLanguage>
     <usedLanguage>50ecc7e8-3763-4a2f-9610-34fb637fad1d(MorseML)</usedLanguage>

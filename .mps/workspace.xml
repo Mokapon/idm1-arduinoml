@@ -7,13 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a219adc3-19ad-4eb5-81c0-8987fbf8dec8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languageModels/constraints.mps" afterPath="$PROJECT_DIR$/languageModels/constraints.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languageModels/editor.mps" afterPath="$PROJECT_DIR$/languageModels/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generator/template/main@generator.mps" afterPath="$PROJECT_DIR$/generator/template/main@generator.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MorseML/MorseML.mpl" afterPath="$PROJECT_DIR$/languages/MorseML/MorseML.mpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MorseML/sandbox/MorseML.sandbox.msd" afterPath="$PROJECT_DIR$/languages/MorseML/sandbox/MorseML.sandbox.msd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MorseML/languageModels/editor.mps" afterPath="$PROJECT_DIR$/languages/MorseML/languageModels/editor.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MorseML/generator/template/main@generator.mps" afterPath="$PROJECT_DIR$/languages/MorseML/generator/template/main@generator.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sandbox/models/ArduinoML/sandbox.mps" afterPath="$PROJECT_DIR$/sandbox/models/ArduinoML/sandbox.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languageModels/structure.history" afterPath="$PROJECT_DIR$/languageModels/structure.history" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languageModels/structure.mps" afterPath="$PROJECT_DIR$/languageModels/structure.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MorseML/sandbox/models/MorseML/sandbox.mps" afterPath="$PROJECT_DIR$/languages/MorseML/sandbox/models/MorseML/sandbox.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/MorseML/languageModels/structure.mps" afterPath="$PROJECT_DIR$/languages/MorseML/languageModels/structure.mps" />
     </list>
     <ignored path="ArduinoML.iws" />
@@ -56,21 +54,12 @@
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
               <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretX" value="0" />
-                    <property name="caretXRelative" value="-218" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Collection_ge17fi_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:8406333b-a98f-4ea1-8988-cf71e3ea52ee(ArduinoML.generator.template.main@generator)/8716409480408749056" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
+                <selectionStack />
                 <errorLabels />
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995404728618" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4695478995407259091" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -101,105 +90,12 @@
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995404728618" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4695478995407259091" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
                 <enabledHints />
               </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Macro" pinned="false" current="false" current-in-tab="false">
-        <entry file="mps://node://ArduinoML/ArduinoML.structure/Macro">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="247" />
-                    <property name="caretXRelative" value="44" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_rootable" cellNumber="0" isInList="false">
-                      <node node_reference="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)/8537481231377161534" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorLabels />
-                <folded />
-                <enabledHints />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995404728618" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorLabels />
-                <folded />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)/8537481231377161534" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MacroDefinition" pinned="false" current="false" current-in-tab="false">
-        <entry file="mps://node://ArduinoML/ArduinoML.structure/MacroDefinition">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="271" />
-                    <property name="caretXRelative" value="124" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="TransactionalProperty_ueqr71_d0a" cellNumber="0" isInList="false">
-                      <node node_reference="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)/4695478995404064532" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorLabels />
-                <folded />
-                <enabledHints />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995404728618" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorLabels />
-                <folded />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)/4695478995404064532" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MacroReference" pinned="false" current="false" current-in-tab="false">
-        <entry file="mps://node://ArduinoML/ArduinoML.structure/MacroReference">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="275" />
-                    <property name="caretXRelative" value="32" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_sourceCardinality" cellNumber="0" isInList="false">
-                      <node node_reference="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)/4695478995404728996" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorLabels />
-                <folded />
-                <enabledHints />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995404728618" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorLabels />
-                <folded />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)/4695478995404050986" />
             </state>
           </provider>
         </entry>
@@ -209,22 +105,12 @@
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
               <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="15" />
-                    <property name="caretXRelative" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="empty_parameter" cellNumber="0" isInList="false">
-                      <node node_reference="r:8406333b-a98f-4ea1-8988-cf71e3ea52ee(ArduinoML.generator.template.main@generator)/1293812887155675590" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
+                <selectionStack />
                 <errorLabels />
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995404728618" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4695478995407259091" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -255,7 +141,7 @@
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995404728618" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4695478995407259091" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -265,50 +151,101 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sketch" pinned="false" current="false" current-in-tab="false">
-        <entry file="mps://node://ArduinoML/ArduinoML.structure/Sketch">
+      <file leaf-file-name="MorseScript" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://node://MorseML/MorseML.structure/MorseScript">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-              <memento viewPositionX="0" viewPositionY="2462">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="149" />
-                    <property name="caretXRelative" value="8" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_eb7h0d_c4a" cellNumber="0" isInList="false">
-                      <node node_reference="r:8406333b-a98f-4ea1-8988-cf71e3ea52ee(ArduinoML.generator.template.main@generator)/4695478995406991825" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack />
                 <errorLabels />
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995404728618" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4695478995407259091" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
                 <enabledHints />
               </inspectorMemento>
-              <node node_ref="r:8406333b-a98f-4ea1-8988-cf71e3ea52ee(ArduinoML.generator.template.main@generator)/82683510313004072" />
+              <node node_ref="r:ce4bb646-7ff1-480b-bc1a-d04a14b813ab(MorseML.editor)/4458279790004274924" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clignote_macro_ref" pinned="false" current="true" current-in-tab="true">
-        <entry file="mps://node://ArduinoML.sandbox/ArduinoML.sandbox/clignote_macro_ref">
+      <file leaf-file-name="Output" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://node://MorseML/MorseML.structure/Output">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorLabels />
+                <folded />
+                <enabledHints />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4695478995407259091" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorLabels />
+                <folded />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:ce4bb646-7ff1-480b-bc1a-d04a14b813ab(MorseML.editor)/4458279790004285384" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MorseScript" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://node://MorseML.sandbox/MorseML.sandbox/MorseScript">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="126">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="79" />
+                    <property name="caretXRelative" value="4" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="empty_macro" cellNumber="0" isInList="false">
+                      <node node_reference="r:a7872c9f-9ac8-4682-a92a-397642ac4cd9(MorseML.sandbox)/4695478995407333035" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorLabels>
+                  <errorLabel errorText="" cellId="property_name" cellNumber="0" isInList="false">
+                    <node node_reference="r:a7872c9f-9ac8-4682-a92a-397642ac4cd9(MorseML.sandbox)/4695478995407333034" />
+                  </errorLabel>
+                  <errorLabel errorText="" cellId="empty_macro" cellNumber="0" isInList="false">
+                    <node node_reference="r:a7872c9f-9ac8-4682-a92a-397642ac4cd9(MorseML.sandbox)/4695478995407333035" />
+                  </errorLabel>
+                  <errorLabel errorText="" cellId="property_pin" cellNumber="0" isInList="false">
+                    <node node_reference="r:a7872c9f-9ac8-4682-a92a-397642ac4cd9(MorseML.sandbox)/4695478995407333034" />
+                  </errorLabel>
+                </errorLabels>
+                <folded />
+                <enabledHints />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4695478995407259091" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorLabels />
+                <folded />
+                <enabledHints />
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Alphabet" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://node://MorseML#645164454841442400/MorseML.generator.template.main@generator/Alphabet">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento viewPositionX="0" viewPositionY="42">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
                     <property name="caretX" value="135" />
-                    <property name="caretXRelative" value="88" />
+                    <property name="caretXRelative" value="4" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_54wtz3_h0" cellNumber="0" isInList="false">
-                      <node node_reference="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995404728618" />
+                    <cellInfo cellId="empty_actions" cellNumber="0" isInList="false">
+                      <node node_reference="r:d6d6662a-686c-4e49-908e-7a1035318fae(MorseML.generator.template.main@generator)/4695478995407324685" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -316,12 +253,43 @@
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995404728618" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4695478995407259091" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
                 <enabledHints />
               </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Letter" pinned="false" current="true" current-in-tab="true">
+        <entry file="mps://node://MorseML/MorseML.structure/Letter">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="31" />
+                    <property name="caretXRelative" value="0" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="emptyPropertiesPlaceHolder" cellNumber="0" isInList="false">
+                      <node node_reference="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4695478995407259091" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorLabels />
+                <folded />
+                <enabledHints />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4695478995407259091" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorLabels />
+                <folded />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4695478995407259091" />
             </state>
           </provider>
         </entry>
@@ -345,7 +313,7 @@
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995404728618" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4695478995407259091" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -495,6 +463,10 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MorseML">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Empty">
@@ -505,15 +477,69 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ArduinoML.sandbox">
+            <PATH_ELEMENT USER_OBJECT="MorseML">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ArduinoML">
+            <PATH_ELEMENT USER_OBJECT="MorseML#645164454841442400">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ArduinoML.sandbox">
+            <PATH_ELEMENT USER_OBJECT="MorseML">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MorseML.generator.template.main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Empty">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Project">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MorseML">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MorseML.structure">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Empty">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Project">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Empty">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Project">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MorseML.sandbox">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MorseML">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MorseML.sandbox">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -558,8 +584,6 @@
           </option>
         </MyState>
       </myRunParameters>
-      <RunnerSettings RunnerId="Default Runner" />
-      <ConfigurationWrapper RunnerId="Default Runner" />
       <method />
     </configuration>
     <configuration default="false" name="Node clignote_macro_bis" type="Java Application" factoryName="Java" temporary="true">
@@ -781,14 +805,14 @@
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.488746" sideWeight="0.57255936" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47588426" sideWeight="0.5560686" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978564" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47588426" sideWeight="0.4439314" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.488746" sideWeight="0.42744064" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47588426" sideWeight="0.4439314" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.488746" sideWeight="0.42744064" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
@@ -857,179 +881,6 @@
             <enabledHints />
           </inspectorMemento>
           <node node_ref="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)/2797755123794647173" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://MorseML/MorseML.structure/Signal">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="15" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4458279790004418491" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-            <enabledHints />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)/8204163728062375845" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4458279790004418491" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://MorseML/MorseML.structure/CharacterReference">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="15" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4458279790004418591" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-            <enabledHints />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)/8716409480408634813" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4458279790004418591" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://MorseML/MorseML.structure/Alphabet">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="119" />
-                <property name="caretXRelative" value="88" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_o1c0" cellNumber="0" isInList="false">
-                  <node node_reference="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4458279790004429379" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-            <enabledHints />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)/2797755123794647173" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4458279790004429379" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://MorseML/MorseML.structure/SignalReference">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="15" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4458279790004429458" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-            <enabledHints />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:4ab64a01-e306-47e8-ae10-55a785ed4529(ArduinoML.editor)/2797755123794928664" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4458279790004429458" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://MorseML/MorseML.structure/Character">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="71" />
-                <property name="caretXRelative" value="56" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4458279790004418428" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-            <enabledHints />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)/8537481231377213635" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4458279790004418428" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://MorseML.sandbox/MorseML.sandbox/Alphabet">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="87" />
-                <property name="caretXRelative" value="12" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="constant_6" cellNumber="0" isInList="false">
-                  <node node_reference="r:a7872c9f-9ac8-4682-a92a-397642ac4cd9(MorseML.sandbox)/4458279790004621603" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-            <enabledHints />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:8406333b-a98f-4ea1-8988-cf71e3ea52ee(ArduinoML.generator.template.main@generator)/1557391422456310922" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-            <enabledHints />
-          </inspectorMemento>
         </state>
       </provider>
     </entry>
@@ -1804,133 +1655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://MorseML#645164454841442400/MorseML.generator.template.main@generator/main">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="31" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="empty_createRootRule" cellNumber="0" isInList="false">
-                  <node node_reference="r:d6d6662a-686c-4e49-908e-7a1035318fae(MorseML.generator.template.main@generator)/645164454841442401" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-            <enabledHints />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995404728589" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://MorseML/MorseML.structure/MorseScript">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="31" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="empty_macros" cellNumber="0" isInList="false">
-                  <node node_reference="r:d6d6662a-686c-4e49-908e-7a1035318fae(MorseML.generator.template.main@generator)/4458279790003952161" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-            <enabledHints />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:8406333b-a98f-4ea1-8988-cf71e3ea52ee(ArduinoML.generator.template.main@generator)/4695478995405351672" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:d6d6662a-686c-4e49-908e-7a1035318fae(MorseML.generator.template.main@generator)/4458279790003952161" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://MorseML#645164454841442400/MorseML.generator.template.main@generator/Alphabet">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="31" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="empty_transitions" cellNumber="0" isInList="false">
-                  <node node_reference="r:d6d6662a-686c-4e49-908e-7a1035318fae(MorseML.generator.template.main@generator)/4695478995403947376" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels>
-              <errorLabel errorText="" cellId="empty_initState" cellNumber="0" isInList="false">
-                <node node_reference="r:d6d6662a-686c-4e49-908e-7a1035318fae(MorseML.generator.template.main@generator)/4695478995403947376" />
-              </errorLabel>
-            </errorLabels>
-            <folded />
-            <enabledHints />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:8406333b-a98f-4ea1-8988-cf71e3ea52ee(ArduinoML.generator.template.main@generator)/1293812887155675657" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="15" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellNumber="0" isInList="false">
-                  <node node_reference="r:8406333b-a98f-4ea1-8988-cf71e3ea52ee(ArduinoML.generator.template.main@generator)/1293812887155675657" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://MorseML.sandbox/MorseML.sandbox/MorseScript">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="159" />
-                <property name="caretXRelative" value="12" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_pin" cellNumber="0" isInList="false">
-                  <node node_reference="r:a7872c9f-9ac8-4682-a92a-397642ac4cd9(MorseML.sandbox)/4458279790004325157" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-            <enabledHints />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:8406333b-a98f-4ea1-8988-cf71e3ea52ee(ArduinoML.generator.template.main@generator)/1293812887155675590" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://ArduinoML/ArduinoML.structure/Macro">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
@@ -1950,7 +1674,7 @@
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995404728618" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995406406678" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1979,7 +1703,7 @@
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995404728618" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/6639211919511864186" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2008,7 +1732,7 @@
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995404728618" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4458279790004418679" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2021,23 +1745,13 @@
     <entry file="mps://node://ArduinoML/ArduinoML.structure/Sketch">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="2462">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="149" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_eb7h0d_c4a" cellNumber="0" isInList="false">
-                  <node node_reference="r:8406333b-a98f-4ea1-8988-cf71e3ea52ee(ArduinoML.generator.template.main@generator)/4695478995406991825" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
+          <memento viewPositionX="0" viewPositionY="380">
+            <selectionStack />
             <errorLabels />
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995404728618" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:ce4bb646-7ff1-480b-bc1a-d04a14b813ab(MorseML.editor)/4458279790004285384" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2050,15 +1764,15 @@
     <entry file="mps://node://ArduinoML.sandbox/ArduinoML.sandbox/clignote_macro_ref">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="126">
+          <memento viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="135" />
-                <property name="caretXRelative" value="88" />
+                <property name="caretX" value="127" />
+                <property name="caretXRelative" value="20" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_54wtz3_h0" cellNumber="0" isInList="false">
-                  <node node_reference="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995404728618" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995406406678" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -2066,7 +1780,7 @@
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995404728618" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:a7872c9f-9ac8-4682-a92a-397642ac4cd9(MorseML.sandbox)/4458279790004621603" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2094,7 +1808,7 @@
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995404728618" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4695478995407259091" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2121,7 +1835,7 @@
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995404728618" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4695478995407259091" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2134,22 +1848,12 @@
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
           <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="15" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="empty_parameter" cellNumber="0" isInList="false">
-                  <node node_reference="r:8406333b-a98f-4ea1-8988-cf71e3ea52ee(ArduinoML.generator.template.main@generator)/1293812887155675590" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
+            <selectionStack />
             <errorLabels />
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995404728618" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4695478995407259091" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2163,21 +1867,12 @@
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
           <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-218" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_ge17fi_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:8406333b-a98f-4ea1-8988-cf71e3ea52ee(ArduinoML.generator.template.main@generator)/8716409480408749056" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
+            <selectionStack />
             <errorLabels />
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995404728618" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4695478995407259091" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2206,7 +1901,140 @@
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:d770f022-b361-42dd-b5cf-79a901c3387e(ArduinoML.sandbox)/4695478995404728618" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4695478995407259091" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MorseML/MorseML.structure/MorseScript">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+            <enabledHints />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4695478995407259091" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:ce4bb646-7ff1-480b-bc1a-d04a14b813ab(MorseML.editor)/4458279790004274924" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MorseML/MorseML.structure/Letter">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="31" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="emptyPropertiesPlaceHolder" cellNumber="0" isInList="false">
+                  <node node_reference="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4695478995407259091" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+            <enabledHints />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4695478995407259091" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4695478995407259091" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MorseML/MorseML.structure/Output">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+            <enabledHints />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4695478995407259091" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:ce4bb646-7ff1-480b-bc1a-d04a14b813ab(MorseML.editor)/4458279790004285384" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MorseML#645164454841442400/MorseML.generator.template.main@generator/Alphabet">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="42">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="135" />
+                <property name="caretXRelative" value="4" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="empty_actions" cellNumber="0" isInList="false">
+                  <node node_reference="r:d6d6662a-686c-4e49-908e-7a1035318fae(MorseML.generator.template.main@generator)/4695478995407324685" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+            <enabledHints />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4695478995407259091" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://MorseML.sandbox/MorseML.sandbox/MorseScript">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="79" />
+                <property name="caretXRelative" value="4" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="empty_macro" cellNumber="0" isInList="false">
+                  <node node_reference="r:a7872c9f-9ac8-4682-a92a-397642ac4cd9(MorseML.sandbox)/4695478995407333035" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels>
+              <errorLabel errorText="" cellId="property_name" cellNumber="0" isInList="false">
+                <node node_reference="r:a7872c9f-9ac8-4682-a92a-397642ac4cd9(MorseML.sandbox)/4695478995407333034" />
+              </errorLabel>
+              <errorLabel errorText="" cellId="empty_macro" cellNumber="0" isInList="false">
+                <node node_reference="r:a7872c9f-9ac8-4682-a92a-397642ac4cd9(MorseML.sandbox)/4695478995407333035" />
+              </errorLabel>
+              <errorLabel errorText="" cellId="property_pin" cellNumber="0" isInList="false">
+                <node node_reference="r:a7872c9f-9ac8-4682-a92a-397642ac4cd9(MorseML.sandbox)/4695478995407333034" />
+              </errorLabel>
+            </errorLabels>
+            <folded />
+            <enabledHints />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)/4695478995407259091" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
