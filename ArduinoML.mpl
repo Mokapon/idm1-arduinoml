@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="ArduinoML#1591981617079247175" uuid="d34bb199-099f-4dfe-a2de-7ef6bf9eb6fe">
+    <generator name="" generatorUID="ArduinoML#1591981617079247175" uuid="d34bb199-099f-4dfe-a2de-7ef6bf9eb6fe">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot path="${module}/generator/template" />

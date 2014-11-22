@@ -24,5 +24,17 @@
     </dependencies>
     <rename id="3f30.4458279790004418591" type="CONCEPT" from="LetterReference" to="CharacterReference" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="3f30" modelUID="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)" version="3" />
+    </dependencies>
+    <rename id="3f30.225294716811549436" type="CONCEPT" from="A" to="S" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="3f30" modelUID="r:7a460e9d-7264-48ec-add4-9a4b1c4c2d26(MorseML.structure)" version="4" />
+    </dependencies>
+    <rename id="3f30.225294716811710047" type="CONCEPT" from="B" to="O" />
+  </StructureModification>
 </history>
 

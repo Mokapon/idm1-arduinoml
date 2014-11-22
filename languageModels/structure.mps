@@ -17,7 +17,7 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="macros" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="4695478995404064532" resolveInfo="MacroDefinition" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="8537481231377161534" resolveInfo="Macro" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2797755123794403768" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
@@ -202,7 +202,8 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8537481231377161534" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Macro" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="macro" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4695478995404064532" resolveInfo="MacroDefinition" />
+    <property name="rootable" nameId="tpce.1096454100552" value="true" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8537481231377161586" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
     </node>
@@ -336,28 +337,6 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="2797755123794647127" resolveInfo="State" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4695478995404050986" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="MacroReference" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4695478995404064532" resolveInfo="MacroDefinition" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4695478995404052752" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="macro" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="8537481231377161534" resolveInfo="Macro" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4695478995404728996" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="unused" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="8537481231380241488" resolveInfo="BasicStateToMacro" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4695478995404064532" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="MacroDefinition" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <property name="final" nameId="tpce.4628067390765956807" value="false" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
   </root>
 </model>
 
