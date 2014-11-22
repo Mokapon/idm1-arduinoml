@@ -210,5 +210,11 @@
     </dependencies>
     <rename id="7lh2.8537481231380241752" type="CONCEPT" from="MacroOutputTransition" to="MacroOutputReference" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="34" />
+    </dependencies>
+    <rename id="7lh2.4695478995404064532" type="CONCEPT" from="MacroDefinitions" to="MacroDefinition" />
+  </StructureModification>
 </history>
 
