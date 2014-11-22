@@ -4,7 +4,7 @@
   <language namespace="58949ab6-fc97-477d-a40f-e22c363ad196(ArduinoML)" />
   <language namespace="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="19" implicit="yes" />
+  <import index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="34" implicit="yes" />
   <root type="7lh2.Sketch" typeId="7lh2.2797755123794349356" id="2797755123794742115" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="State_based_alarm" />
     <link role="initState" roleId="7lh2.3146970967281169613" targetNodeId="8204163728062154302" resolveInfo="ledOff" />
@@ -26,15 +26,14 @@
     <node role="states" roleId="7lh2.2797755123794736525" type="7lh2.State" typeId="7lh2.2797755123794647127" id="8716409480409036560" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="transitionLedOnLedOff" />
     </node>
-    <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.InputBrick" typeId="7lh2.2797755123794694657" id="8204163728062477571" nodeInfo="ng">
+    <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.InputBrick" typeId="7lh2.2797755123794694657" id="8537481231379538636" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="button" />
       <property name="pin" nameId="7lh2.2797755123794647119" value="9" />
-      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="6639211919511842714" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="press" />
-        <property name="type" nameId="7lh2.8204163728062375387" value="HIGH" />
-      </node>
-      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="8716409480409036460" nodeInfo="ng">
+      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="8537481231379538638" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="release" />
+      </node>
+      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="8537481231379538648" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="press" />
       </node>
     </node>
     <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.OutputBrick" typeId="7lh2.2797755123794704628" id="8204163728062523397" nodeInfo="ng">
@@ -48,38 +47,60 @@
         <property name="type" nameId="7lh2.8204163728062375387" value="HIGH" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409036137" nodeInfo="ng">
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409036137" nodeInfo="ng">
       <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="8204163728062154302" resolveInfo="ledOff" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="8716409480409036554" resolveInfo="transitionLedOffLedOn" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409036233" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="6639211919511842714" resolveInfo="press" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="8716409480409036554" resolveInfo="transitionLedOffLedOn" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379538657" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379538648" resolveInfo="press" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409036666" nodeInfo="ng">
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409036666" nodeInfo="ng">
       <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="8716409480409036554" resolveInfo="transitionLedOffLedOn" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="8204163728062213377" resolveInfo="ledOn" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409036673" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8716409480409036460" resolveInfo="release" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="8204163728062213377" resolveInfo="ledOn" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379538660" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379538638" resolveInfo="release" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409036245" nodeInfo="ng">
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409036245" nodeInfo="ng">
       <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="8204163728062213377" resolveInfo="ledOn" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="8716409480409036560" resolveInfo="transitionLedOnLedOff" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409036251" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="6639211919511842714" resolveInfo="press" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="8716409480409036560" resolveInfo="transitionLedOnLedOff" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379538663" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379538648" resolveInfo="press" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409036782" nodeInfo="ng">
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409036782" nodeInfo="ng">
       <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="8716409480409036560" resolveInfo="transitionLedOnLedOff" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="8204163728062154302" resolveInfo="ledOff" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409036791" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8716409480409036460" resolveInfo="release" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="8204163728062154302" resolveInfo="ledOff" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379538666" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379538638" resolveInfo="release" />
       </node>
     </node>
   </root>
   <root type="7lh2.Sketch" typeId="7lh2.2797755123794349356" id="2901231351579480079" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Dual_check_alarm" />
     <link role="initState" roleId="7lh2.3146970967281169613" targetNodeId="2901231351579480086" resolveInfo="alarmOff" />
+    <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.InputBrick" typeId="7lh2.2797755123794694657" id="8537481231379537242" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="buttonOne" />
+      <property name="pin" nameId="7lh2.2797755123794647119" value="8" />
+      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="8537481231379537244" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="buttonOne_release" />
+      </node>
+      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="8537481231379537257" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="buttonOne_press" />
+        <property name="type" nameId="7lh2.8204163728062375387" value="HIGH" />
+      </node>
+    </node>
+    <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.InputBrick" typeId="7lh2.2797755123794694657" id="8537481231379537645" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="buttonTwo" />
+      <property name="pin" nameId="7lh2.2797755123794647119" value="9" />
+      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="8537481231379537647" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="buttonTwo_release" />
+      </node>
+      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="8537481231379537663" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="buttonTwo_press" />
+        <property name="type" nameId="7lh2.8204163728062375387" value="HIGH" />
+      </node>
+    </node>
     <node role="states" roleId="7lh2.2797755123794736525" type="7lh2.State" typeId="7lh2.2797755123794647127" id="2901231351579480080" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="buzzOn" />
       <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="2901231351579480081" nodeInfo="ng">
@@ -104,28 +125,6 @@
         <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="2901231351579480095" resolveInfo="buzz_off" />
       </node>
     </node>
-    <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.InputBrick" typeId="7lh2.2797755123794694657" id="2901231351579480089" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="buttonOne" />
-      <property name="pin" nameId="7lh2.2797755123794647119" value="8" />
-      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="2901231351579480090" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="buttonOne_press" />
-        <property name="type" nameId="7lh2.8204163728062375387" value="HIGH" />
-      </node>
-      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="2901231351579480883" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="buttonOne_release" />
-      </node>
-    </node>
-    <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.InputBrick" typeId="7lh2.2797755123794694657" id="2901231351579480632" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="buttonTwo" />
-      <property name="pin" nameId="7lh2.2797755123794647119" value="9" />
-      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="2901231351579480634" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="buttonTwo_press" />
-        <property name="type" nameId="7lh2.8204163728062375387" value="HIGH" />
-      </node>
-      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="2901231351579480962" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="buttonTwo_release" />
-      </node>
-    </node>
     <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.OutputBrick" typeId="7lh2.2797755123794704628" id="2901231351579480094" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="buzzer" />
       <property name="pin" nameId="7lh2.2797755123794647119" value="10" />
@@ -137,60 +136,60 @@
         <property name="name" nameId="tpck.1169194664001" value="buzz_on" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409036890" nodeInfo="ng">
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409036890" nodeInfo="ng">
       <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="2901231351579480086" resolveInfo="alarmOff" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="2901231351579481181" resolveInfo="buttonOnePressed" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409036908" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="2901231351579480090" resolveInfo="buttonOne_press" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="2901231351579481181" resolveInfo="buttonOnePressed" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379537687" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379537257" resolveInfo="buttonOne_press" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409036910" nodeInfo="ng">
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409036910" nodeInfo="ng">
       <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="2901231351579480086" resolveInfo="alarmOff" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="2901231351579481267" resolveInfo="buttonTwoPressed" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409036928" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="2901231351579480634" resolveInfo="buttonTwo_press" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="2901231351579481267" resolveInfo="buttonTwoPressed" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379537690" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379537663" resolveInfo="buttonTwo_press" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409036930" nodeInfo="ng">
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409036930" nodeInfo="ng">
       <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="2901231351579481181" resolveInfo="buttonOnePressed" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="2901231351579480080" resolveInfo="buzzOn" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409036948" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="2901231351579480634" resolveInfo="buttonTwo_press" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="2901231351579480080" resolveInfo="buzzOn" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379537693" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379537663" resolveInfo="buttonTwo_press" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409036950" nodeInfo="ng">
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409036950" nodeInfo="ng">
       <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="2901231351579481181" resolveInfo="buttonOnePressed" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="2901231351579480086" resolveInfo="alarmOff" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409037198" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="2901231351579480883" resolveInfo="buttonOne_release" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="2901231351579480086" resolveInfo="alarmOff" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379537696" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379537244" resolveInfo="buttonOne_release" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409037200" nodeInfo="ng">
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409037200" nodeInfo="ng">
       <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="2901231351579481267" resolveInfo="buttonTwoPressed" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="2901231351579480080" resolveInfo="buzzOn" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409037218" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="2901231351579480090" resolveInfo="buttonOne_press" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="2901231351579480080" resolveInfo="buzzOn" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379537699" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379537257" resolveInfo="buttonOne_press" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409037220" nodeInfo="ng">
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409037220" nodeInfo="ng">
       <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="2901231351579481267" resolveInfo="buttonTwoPressed" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="2901231351579480086" resolveInfo="alarmOff" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409037334" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="2901231351579480962" resolveInfo="buttonTwo_release" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="2901231351579480086" resolveInfo="alarmOff" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379537702" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379537647" resolveInfo="buttonTwo_release" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409037370" nodeInfo="ng">
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409037370" nodeInfo="ng">
       <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="2901231351579480080" resolveInfo="buzzOn" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="2901231351579481181" resolveInfo="buttonOnePressed" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409037388" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="2901231351579480962" resolveInfo="buttonTwo_release" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="2901231351579481181" resolveInfo="buttonOnePressed" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379537705" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379537647" resolveInfo="buttonTwo_release" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409037424" nodeInfo="ng">
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409037424" nodeInfo="ng">
       <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="2901231351579480080" resolveInfo="buzzOn" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="2901231351579481267" resolveInfo="buttonTwoPressed" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409037442" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="2901231351579480883" resolveInfo="buttonOne_release" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="2901231351579481267" resolveInfo="buttonTwoPressed" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379537708" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379537244" resolveInfo="buttonOne_release" />
       </node>
     </node>
   </root>
@@ -233,15 +232,15 @@
     <node role="states" roleId="7lh2.2797755123794736525" type="7lh2.State" typeId="7lh2.2797755123794647127" id="8716409480409037871" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="transitionAlarmOffBuzzOn" />
     </node>
-    <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.InputBrick" typeId="7lh2.2797755123794694657" id="2901231351579479390" nodeInfo="ng">
+    <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.InputBrick" typeId="7lh2.2797755123794694657" id="8537481231379538211" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="button" />
       <property name="pin" nameId="7lh2.2797755123794647119" value="9" />
-      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="2901231351579479391" nodeInfo="ng">
+      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="8537481231379538213" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="release" />
+      </node>
+      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="8537481231379538226" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="press" />
         <property name="type" nameId="7lh2.8204163728062375387" value="HIGH" />
-      </node>
-      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="8716409480409037648" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="release" />
       </node>
     </node>
     <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.OutputBrick" typeId="7lh2.2797755123794704628" id="2901231351579479393" nodeInfo="ng">
@@ -266,46 +265,46 @@
         <property name="name" nameId="tpck.1169194664001" value="buzz_on" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409037541" nodeInfo="ng">
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409037541" nodeInfo="ng">
       <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="2901231351579479387" resolveInfo="alarmOff" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="8716409480409037871" resolveInfo="transitionAlarmOffBuzzOn" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409037549" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="2901231351579479391" resolveInfo="press" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="8716409480409037871" resolveInfo="transitionAlarmOffBuzzOn" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379538426" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379538226" resolveInfo="press" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409038007" nodeInfo="ng">
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409038007" nodeInfo="ng">
       <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="8716409480409037871" resolveInfo="transitionAlarmOffBuzzOn" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="2901231351579479384" resolveInfo="buzzOn" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409038118" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8716409480409037648" resolveInfo="release" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="2901231351579479384" resolveInfo="buzzOn" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379538429" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379538213" resolveInfo="release" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409038233" nodeInfo="ng">
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409038233" nodeInfo="ng">
       <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="2901231351579479384" resolveInfo="buzzOn" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="8716409480409037749" resolveInfo="transitionBuzzOnLedOn" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409038348" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="2901231351579479391" resolveInfo="press" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="8716409480409037749" resolveInfo="transitionBuzzOnLedOn" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379538432" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379538226" resolveInfo="press" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409038467" nodeInfo="ng">
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409038467" nodeInfo="ng">
       <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="8716409480409037749" resolveInfo="transitionBuzzOnLedOn" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="2901231351579479538" resolveInfo="ledOn" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409038586" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8716409480409037648" resolveInfo="release" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="2901231351579479538" resolveInfo="ledOn" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379538435" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379538213" resolveInfo="release" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409038709" nodeInfo="ng">
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409038709" nodeInfo="ng">
       <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="2901231351579479538" resolveInfo="ledOn" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="8716409480409037859" resolveInfo="transitionLedOnAlarmOff" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409038724" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="2901231351579479391" resolveInfo="press" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="8716409480409037859" resolveInfo="transitionLedOnAlarmOff" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379538438" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379538226" resolveInfo="press" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409038851" nodeInfo="ng">
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409038851" nodeInfo="ng">
       <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="8716409480409037859" resolveInfo="transitionLedOnAlarmOff" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="2901231351579479387" resolveInfo="alarmOff" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409038868" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8716409480409037648" resolveInfo="release" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="2901231351579479387" resolveInfo="alarmOff" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379538441" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379538213" resolveInfo="release" />
       </node>
     </node>
   </root>
@@ -330,16 +329,16 @@
         <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="2901231351579392931" resolveInfo="led_off" />
       </node>
     </node>
-    <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.InputBrick" typeId="7lh2.2797755123794694657" id="2901231351579392897" nodeInfo="ng">
+    <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.InputBrick" typeId="7lh2.2797755123794694657" id="8537481231379538864" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="button" />
       <property name="pin" nameId="7lh2.2797755123794647119" value="9" />
-      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="2901231351579392898" nodeInfo="ng">
+      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="8537481231379538866" nodeInfo="ng">
+        <property name="type" nameId="7lh2.8204163728062375387" value="LOW" />
+        <property name="name" nameId="tpck.1169194664001" value="release" />
+      </node>
+      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="8537481231379538879" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="press" />
         <property name="type" nameId="7lh2.8204163728062375387" value="HIGH" />
-      </node>
-      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="2901231351579392901" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="release" />
-        <property name="type" nameId="7lh2.8204163728062375387" value="LOW" />
       </node>
     </node>
     <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.OutputBrick" typeId="7lh2.2797755123794704628" id="2901231351579392929" nodeInfo="ng">
@@ -364,24 +363,46 @@
         <property name="name" nameId="tpck.1169194664001" value="buzz_on" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409039155" nodeInfo="ng">
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409039155" nodeInfo="ng">
       <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="2901231351579367278" resolveInfo="alarmOn" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="2901231351579393062" resolveInfo="alarmOff" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409494908" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="2901231351579392901" resolveInfo="release" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="2901231351579393062" resolveInfo="alarmOff" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379538891" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379538866" resolveInfo="release" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409039163" nodeInfo="ng">
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409039163" nodeInfo="ng">
       <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="2901231351579393062" resolveInfo="alarmOff" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="2901231351579367278" resolveInfo="alarmOn" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409494911" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="2901231351579392898" resolveInfo="press" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="2901231351579367278" resolveInfo="alarmOn" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379538894" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379538879" resolveInfo="press" />
       </node>
     </node>
   </root>
   <root type="7lh2.Sketch" typeId="7lh2.2797755123794349356" id="8716409480409054952" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="LevelCrossing" />
     <link role="initState" roleId="7lh2.3146970967281169613" targetNodeId="8716409480409054953" resolveInfo="barrierUp" />
+    <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.InputBrick" typeId="7lh2.2797755123794694657" id="8537481231379537912" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="barrier" />
+      <property name="pin" nameId="7lh2.2797755123794647119" value="8" />
+      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="8537481231379537914" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="barrier_down" />
+      </node>
+      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="8537481231379537934" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="barrier_up" />
+        <property name="type" nameId="7lh2.8204163728062375387" value="HIGH" />
+      </node>
+    </node>
+    <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.InputBrick" typeId="7lh2.2797755123794694657" id="8537481231379537957" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="emergency_button" />
+      <property name="pin" nameId="7lh2.2797755123794647119" value="9" />
+      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="8537481231379537959" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="emergency_button_release" />
+      </node>
+      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="8537481231379538013" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="emergency_button_press" />
+        <property name="type" nameId="7lh2.8204163728062375387" value="HIGH" />
+      </node>
+    </node>
     <node role="states" roleId="7lh2.2797755123794736525" type="7lh2.State" typeId="7lh2.2797755123794647127" id="8716409480409054953" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="barrierUp" />
       <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="8716409480409056236" nodeInfo="ng">
@@ -407,7 +428,7 @@
       </node>
     </node>
     <node role="states" roleId="7lh2.2797755123794736525" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="8716409480409056437" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="barrierUpGreenLedAlarmOn" />
+      <property name="name" nameId="tpck.1169194664001" value="barrierUpGreen" />
       <property name="duration" nameId="7lh2.6639211919511842967" value="1000" />
       <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="8716409480409056580" nodeInfo="ng">
         <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="8716409480409055671" resolveInfo="green_led_on" />
@@ -420,7 +441,7 @@
       </node>
     </node>
     <node role="states" roleId="7lh2.2797755123794736525" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="8716409480409056747" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="barrierUpRedLedAlarmOn" />
+      <property name="name" nameId="tpck.1169194664001" value="barrierUpRed" />
       <property name="duration" nameId="7lh2.6639211919511842967" value="1000" />
       <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="8716409480409056772" nodeInfo="ng">
         <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="8716409480409055706" resolveInfo="red_led_on" />
@@ -433,7 +454,7 @@
       </node>
     </node>
     <node role="states" roleId="7lh2.2797755123794736525" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="8716409480409056809" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="barrierDownGreenLedAlarmOn" />
+      <property name="name" nameId="tpck.1169194664001" value="barrierDownGreen" />
       <property name="duration" nameId="7lh2.6639211919511842967" value="1000" />
       <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="8716409480409056828" nodeInfo="ng">
         <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="8716409480409055671" resolveInfo="green_led_on" />
@@ -446,7 +467,7 @@
       </node>
     </node>
     <node role="states" roleId="7lh2.2797755123794736525" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="8716409480409057011" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="barrierDownRedLedAlarmOn" />
+      <property name="name" nameId="tpck.1169194664001" value="barrierDownRed" />
       <property name="duration" nameId="7lh2.6639211919511842967" value="1000" />
       <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="8716409480409057034" nodeInfo="ng">
         <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="8716409480409055706" resolveInfo="red_led_on" />
@@ -456,28 +477,6 @@
       </node>
       <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="8716409480409057047" nodeInfo="ng">
         <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="8716409480409055985" resolveInfo="buzz_on" />
-      </node>
-    </node>
-    <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.InputBrick" typeId="7lh2.2797755123794694657" id="8716409480409055172" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="barrier" />
-      <property name="pin" nameId="7lh2.2797755123794647119" value="8" />
-      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="8716409480409055173" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="barrier_up" />
-        <property name="type" nameId="7lh2.8204163728062375387" value="HIGH" />
-      </node>
-      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="8716409480409055287" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="barrier_down" />
-      </node>
-    </node>
-    <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.InputBrick" typeId="7lh2.2797755123794694657" id="8716409480409055407" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="emergency_button" />
-      <property name="pin" nameId="7lh2.2797755123794647119" value="9" />
-      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="8716409480409055409" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="emergency_button_press" />
-        <property name="type" nameId="7lh2.8204163728062375387" value="HIGH" />
-      </node>
-      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="8716409480409055416" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="emergency_button_release" />
       </node>
     </node>
     <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.OutputBrick" typeId="7lh2.2797755123794704628" id="8716409480409055542" nodeInfo="ng">
@@ -513,82 +512,146 @@
         <property name="name" nameId="tpck.1169194664001" value="buzz_on" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409057199" nodeInfo="ng">
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409057199" nodeInfo="ng">
       <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="8716409480409054953" resolveInfo="barrierUp" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="8716409480409056254" resolveInfo="barrierDown" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409057201" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8716409480409055287" resolveInfo="barrier_down" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="8716409480409056254" resolveInfo="barrierDown" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379539102" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379537914" resolveInfo="barrier_down" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409057207" nodeInfo="ng">
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409057207" nodeInfo="ng">
       <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="8716409480409056254" resolveInfo="barrierDown" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="8716409480409054953" resolveInfo="barrierUp" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409057212" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8716409480409055173" resolveInfo="barrier_up" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="8716409480409054953" resolveInfo="barrierUp" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379539099" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379537934" resolveInfo="barrier_up" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409057230" nodeInfo="ng">
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409057230" nodeInfo="ng">
       <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="8716409480409054953" resolveInfo="barrierUp" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="8716409480409056437" resolveInfo="barrierUpGreenLedAlarmOn" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409057237" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8716409480409055409" resolveInfo="emergency_button_press" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="8716409480409056437" resolveInfo="barrierUpGreen" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379539096" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379538013" resolveInfo="emergency_button_press" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409057247" nodeInfo="ng">
-      <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="8716409480409056437" resolveInfo="barrierUpGreenLedAlarmOn" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="8716409480409054953" resolveInfo="barrierUp" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409057256" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8716409480409055416" resolveInfo="emergency_button_release" />
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409057247" nodeInfo="ng">
+      <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="8716409480409056437" resolveInfo="barrierUpGreen" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="8716409480409054953" resolveInfo="barrierUp" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379539093" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379537959" resolveInfo="emergency_button_release" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409057268" nodeInfo="ng">
-      <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="8716409480409056747" resolveInfo="barrierUpRedLedAlarmOn" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="8716409480409054953" resolveInfo="barrierUp" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409057279" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8716409480409055416" resolveInfo="emergency_button_release" />
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409057268" nodeInfo="ng">
+      <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="8716409480409056747" resolveInfo="barrierUpRed" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="8716409480409054953" resolveInfo="barrierUp" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379539090" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379537959" resolveInfo="emergency_button_release" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409057450" nodeInfo="ng">
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409057450" nodeInfo="ng">
       <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="8716409480409056254" resolveInfo="barrierDown" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="8716409480409057011" resolveInfo="barrierDownRedLedAlarmOn" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409057463" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8716409480409055409" resolveInfo="emergency_button_press" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="8716409480409057011" resolveInfo="barrierDownRed" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379539087" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379538013" resolveInfo="emergency_button_press" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409057479" nodeInfo="ng">
-      <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="8716409480409057011" resolveInfo="barrierDownRedLedAlarmOn" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="8716409480409056254" resolveInfo="barrierDown" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409057494" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8716409480409055416" resolveInfo="emergency_button_release" />
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409057479" nodeInfo="ng">
+      <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="8716409480409057011" resolveInfo="barrierDownRed" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="8716409480409056254" resolveInfo="barrierDown" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379539084" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379537959" resolveInfo="emergency_button_release" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicTransition" typeId="7lh2.8716409480408634068" id="8716409480409057512" nodeInfo="ng">
-      <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="8716409480409056809" resolveInfo="barrierDownGreenLedAlarmOn" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="8716409480409056254" resolveInfo="barrierDown" />
-      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8716409480409057529" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8716409480409055416" resolveInfo="emergency_button_release" />
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToState" typeId="7lh2.8716409480408634068" id="8716409480409057512" nodeInfo="ng">
+      <link role="source" roleId="7lh2.8716409480408634098" targetNodeId="8716409480409056809" resolveInfo="barrierDownGreen" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="8716409480409056254" resolveInfo="barrierDown" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="8537481231379539081" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="8537481231379537959" resolveInfo="emergency_button_release" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.TimedTransition" typeId="7lh2.8716409480408634813" id="8716409480409057712" nodeInfo="ng">
-      <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="8716409480409057011" resolveInfo="barrierDownRedLedAlarmOn" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="8716409480409056809" resolveInfo="barrierDownGreenLedAlarmOn" />
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.TimedStateToState" typeId="7lh2.8716409480408634813" id="8716409480409057712" nodeInfo="ng">
+      <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="8716409480409057011" resolveInfo="barrierDownRed" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="8716409480409056809" resolveInfo="barrierDownGreen" />
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.TimedTransition" typeId="7lh2.8716409480408634813" id="8716409480409057806" nodeInfo="ng">
-      <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="8716409480409056809" resolveInfo="barrierDownGreenLedAlarmOn" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="8716409480409057011" resolveInfo="barrierDownRedLedAlarmOn" />
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.TimedStateToState" typeId="7lh2.8716409480408634813" id="8716409480409057806" nodeInfo="ng">
+      <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="8716409480409056809" resolveInfo="barrierDownGreen" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="8716409480409057011" resolveInfo="barrierDownRed" />
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.TimedTransition" typeId="7lh2.8716409480408634813" id="8716409480409057846" nodeInfo="ng">
-      <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="8716409480409056437" resolveInfo="barrierUpGreenLedAlarmOn" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="8716409480409056747" resolveInfo="barrierUpRedLedAlarmOn" />
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.TimedStateToState" typeId="7lh2.8716409480408634813" id="8716409480409057846" nodeInfo="ng">
+      <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="8716409480409056437" resolveInfo="barrierUpGreen" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="8716409480409056747" resolveInfo="barrierUpRed" />
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.TimedTransition" typeId="7lh2.8716409480408634813" id="8716409480409057888" nodeInfo="ng">
-      <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="8716409480409056747" resolveInfo="barrierUpRedLedAlarmOn" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="8716409480409056437" resolveInfo="barrierUpGreenLedAlarmOn" />
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.TimedStateToState" typeId="7lh2.8716409480408634813" id="8716409480409057888" nodeInfo="ng">
+      <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="8716409480409056747" resolveInfo="barrierUpRed" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="8716409480409056437" resolveInfo="barrierUpGreen" />
     </node>
   </root>
   <root type="7lh2.Sketch" typeId="7lh2.2797755123794349356" id="8716409480409359830" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="clignote" />
-    <link role="initState" roleId="7lh2.3146970967281169613" targetNodeId="8716409480409362963" resolveInfo="led1on" />
+    <property name="name" nameId="tpck.1169194664001" value="clignote_macro" />
+    <link role="initState" roleId="7lh2.3146970967281169613" targetNodeId="8537481231380186095" resolveInfo="start" />
+    <node role="states" roleId="7lh2.2797755123794736525" type="7lh2.State" typeId="7lh2.2797755123794647127" id="8537481231380186095" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="start" />
+      <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="1293812887154446399" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="8716409480409359860" resolveInfo="led1_off" />
+      </node>
+      <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="1293812887154446405" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="8716409480409362778" resolveInfo="led2_off" />
+      </node>
+    </node>
+    <node role="states" roleId="7lh2.2797755123794736525" type="7lh2.State" typeId="7lh2.2797755123794647127" id="1293812887157804706" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="stop" />
+      <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="1293812887157804711" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="8716409480409359860" resolveInfo="led1_off" />
+      </node>
+      <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="1293812887157804716" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="8716409480409362778" resolveInfo="led2_off" />
+      </node>
+    </node>
+    <node role="macros" roleId="7lh2.8537481231377265311" type="7lh2.Macro" typeId="7lh2.8537481231377161534" id="8537481231380185661" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="mouit" />
+      <link role="inputState" roleId="7lh2.8537481231377264205" targetNodeId="8537481231380185861" resolveInfo="led1On" />
+      <node role="outputs" roleId="7lh2.8537481231377213635" type="7lh2.MacroBasicOutput" typeId="7lh2.8537481231377264148" id="1293812887153701117" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="from_led1" />
+        <link role="source" roleId="7lh2.8537481231377264149" targetNodeId="8537481231380185861" resolveInfo="led1On" />
+        <node role="triggers" roleId="7lh2.8537481231377213786" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="1293812887153717034" nodeInfo="ng">
+          <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="1293812887153717029" resolveInfo="release" />
+        </node>
+      </node>
+      <node role="outputs" roleId="7lh2.8537481231377213635" type="7lh2.MacroBasicOutput" typeId="7lh2.8537481231377264148" id="1293812887153717051" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="from_led2" />
+        <link role="source" roleId="7lh2.8537481231377264149" targetNodeId="8537481231380185883" resolveInfo="led2On" />
+        <node role="triggers" roleId="7lh2.8537481231377213786" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="1293812887153717056" nodeInfo="ng">
+          <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="1293812887153717029" resolveInfo="release" />
+        </node>
+      </node>
+      <node role="states" roleId="7lh2.8537481231377188753" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="8537481231380185861" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="led1On" />
+        <property name="duration" nameId="7lh2.6639211919511842967" value="1000" />
+        <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="8537481231380185866" nodeInfo="ng">
+          <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="8716409480409362768" resolveInfo="led1_on" />
+        </node>
+        <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="8537481231380185871" nodeInfo="ng">
+          <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="8716409480409362778" resolveInfo="led2_off" />
+        </node>
+      </node>
+      <node role="states" roleId="7lh2.8537481231377188753" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="8537481231380185883" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="led2On" />
+        <property name="duration" nameId="7lh2.6639211919511842967" value="1000" />
+        <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="8537481231380185889" nodeInfo="ng">
+          <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="8716409480409359860" resolveInfo="led1_off" />
+        </node>
+        <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="8537481231380185894" nodeInfo="ng">
+          <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="8716409480409362785" resolveInfo="led2_on" />
+        </node>
+      </node>
+      <node role="transitions" roleId="7lh2.8537481231377188755" type="7lh2.TimedStateToState" typeId="7lh2.8716409480408634813" id="8537481231380241219" nodeInfo="ng">
+        <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="8537481231380185861" resolveInfo="led1On" />
+        <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="8537481231380185883" resolveInfo="led2On" />
+      </node>
+      <node role="transitions" roleId="7lh2.8537481231377188755" type="7lh2.TimedStateToState" typeId="7lh2.8716409480408634813" id="8537481231380241224" nodeInfo="ng">
+        <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="8537481231380185883" resolveInfo="led2On" />
+        <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="8537481231380185861" resolveInfo="led1On" />
+      </node>
+    </node>
     <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.OutputBrick" typeId="7lh2.2797755123794704628" id="8716409480409359859" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="led1" />
       <property name="pin" nameId="7lh2.2797755123794647119" value="10" />
@@ -611,33 +674,234 @@
         <property name="name" nameId="tpck.1169194664001" value="led2_off" />
       </node>
     </node>
-    <node role="states" roleId="7lh2.2797755123794736525" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="8716409480409362963" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="led1on" />
+    <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.InputBrick" typeId="7lh2.2797755123794694657" id="1293812887153717017" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="button" />
+      <property name="pin" nameId="7lh2.2797755123794647119" value="9" />
+      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="1293812887153717019" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="press" />
+        <property name="type" nameId="7lh2.8204163728062375387" value="HIGH" />
+      </node>
+      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="1293812887153717029" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="release" />
+      </node>
+    </node>
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToMacro" typeId="7lh2.8537481231380241488" id="8537481231380640568" nodeInfo="ng">
+      <link role="source" roleId="7lh2.8537481231380473719" targetNodeId="8537481231380186095" resolveInfo="start" />
+      <link role="target" roleId="7lh2.1293812887161528407" targetNodeId="8537481231380185661" resolveInfo="mouit" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="1293812887153717039" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="1293812887153717019" resolveInfo="press" />
+      </node>
+      <node role="outputsTransitions" roleId="7lh2.1293812887161528401" type="7lh2.MacroOutputReference" typeId="7lh2.8537481231380241752" id="1293812887153717042" nodeInfo="ng">
+        <link role="source" roleId="7lh2.8537481231380241782" targetNodeId="1293812887153701117" resolveInfo="from_led1" />
+        <link role="target" roleId="7lh2.8537481231380241780" targetNodeId="1293812887157804706" resolveInfo="stop" />
+      </node>
+      <node role="outputsTransitions" roleId="7lh2.1293812887161528401" type="7lh2.MacroOutputReference" typeId="7lh2.8537481231380241752" id="1293812887153717044" nodeInfo="ng">
+        <link role="source" roleId="7lh2.8537481231380241782" targetNodeId="1293812887153717051" resolveInfo="from_led2" />
+        <link role="target" roleId="7lh2.8537481231380241780" targetNodeId="1293812887157804706" resolveInfo="stop" />
+      </node>
+    </node>
+  </root>
+  <root type="7lh2.Sketch" typeId="7lh2.2797755123794349356" id="1293812887154448208" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="clignote" />
+    <link role="initState" roleId="7lh2.3146970967281169613" targetNodeId="1293812887154462180" resolveInfo="led1" />
+    <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.OutputBrick" typeId="7lh2.2797755123794704628" id="1293812887154462145" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="led1" />
+      <property name="pin" nameId="7lh2.2797755123794647119" value="10" />
+      <node role="events" roleId="7lh2.8204163728062398983" type="7lh2.OutputEvent" typeId="7lh2.2797755123794774345" id="1293812887154462146" nodeInfo="ng">
+        <property name="type" nameId="7lh2.8204163728062375387" value="HIGH" />
+        <property name="name" nameId="tpck.1169194664001" value="led1_on" />
+      </node>
+      <node role="events" roleId="7lh2.8204163728062398983" type="7lh2.OutputEvent" typeId="7lh2.2797755123794774345" id="1293812887154462147" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="led1_off" />
+      </node>
+    </node>
+    <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.OutputBrick" typeId="7lh2.2797755123794704628" id="1293812887154462148" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="led2" />
+      <property name="pin" nameId="7lh2.2797755123794647119" value="11" />
+      <node role="events" roleId="7lh2.8204163728062398983" type="7lh2.OutputEvent" typeId="7lh2.2797755123794774345" id="1293812887154462149" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="led2_on" />
+        <property name="type" nameId="7lh2.8204163728062375387" value="HIGH" />
+      </node>
+      <node role="events" roleId="7lh2.8204163728062398983" type="7lh2.OutputEvent" typeId="7lh2.2797755123794774345" id="1293812887154462150" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="led2_off" />
+      </node>
+    </node>
+    <node role="states" roleId="7lh2.2797755123794736525" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="1293812887154462180" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="led1" />
       <property name="duration" nameId="7lh2.6639211919511842967" value="1000" />
-      <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="8716409480409362966" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="8716409480409362768" resolveInfo="led1_on" />
+      <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="1293812887154462188" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="1293812887154462146" resolveInfo="led1_on" />
       </node>
-      <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="8716409480409362971" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="8716409480409362778" resolveInfo="led2_off" />
+      <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="1293812887154462193" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="1293812887154462150" resolveInfo="led2_off" />
       </node>
     </node>
-    <node role="states" roleId="7lh2.2797755123794736525" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="8716409480409362980" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="led2on" />
+    <node role="states" roleId="7lh2.2797755123794736525" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="1293812887154462197" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="led2" />
       <property name="duration" nameId="7lh2.6639211919511842967" value="1000" />
-      <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="8716409480409362986" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="8716409480409362785" resolveInfo="led2_on" />
+      <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="1293812887154462205" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="1293812887154462147" resolveInfo="led1_off" />
       </node>
-      <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="8716409480409362991" nodeInfo="ng">
-        <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="8716409480409359860" resolveInfo="led1_off" />
+      <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="1293812887154462210" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="1293812887154462149" resolveInfo="led2_on" />
       </node>
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.TimedTransition" typeId="7lh2.8716409480408634813" id="8716409480409363175" nodeInfo="ng">
-      <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="8716409480409362963" resolveInfo="led1on" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="8716409480409362980" resolveInfo="led2on" />
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.TimedStateToState" typeId="7lh2.8716409480408634813" id="1293812887154462214" nodeInfo="ng">
+      <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="1293812887154462180" resolveInfo="led1" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="1293812887154462197" resolveInfo="led2" />
     </node>
-    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.TimedTransition" typeId="7lh2.8716409480408634813" id="8716409480409363361" nodeInfo="ng">
-      <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="8716409480409362980" resolveInfo="led2on" />
-      <link role="target" roleId="7lh2.8204163728061924179" targetNodeId="8716409480409362963" resolveInfo="led1on" />
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.TimedStateToState" typeId="7lh2.8716409480408634813" id="1293812887154462219" nodeInfo="ng">
+      <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="1293812887154462197" resolveInfo="led2" />
+      <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="1293812887154462180" resolveInfo="led1" />
+    </node>
+  </root>
+  <root type="7lh2.Sketch" typeId="7lh2.2797755123794349356" id="1293812887158041256" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="clignote_macro_bis" />
+    <link role="initState" roleId="7lh2.3146970967281169613" targetNodeId="1293812887158041257" resolveInfo="start" />
+    <node role="states" roleId="7lh2.2797755123794736525" type="7lh2.State" typeId="7lh2.2797755123794647127" id="1293812887158041257" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="start" />
+      <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="1293812887158041258" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="1293812887158041278" resolveInfo="led1_off" />
+      </node>
+      <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="1293812887158041259" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="1293812887158041281" resolveInfo="led2_off" />
+      </node>
+    </node>
+    <node role="states" roleId="7lh2.2797755123794736525" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="1293812887158042295" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="middle" />
+      <property name="duration" nameId="7lh2.6639211919511842967" value="2000" />
+      <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="1293812887158042303" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="1293812887158041278" resolveInfo="led1_off" />
+      </node>
+      <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="1293812887158042308" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="1293812887158041280" resolveInfo="led2_on" />
+      </node>
+    </node>
+    <node role="macros" roleId="7lh2.8537481231377265311" type="7lh2.Macro" typeId="7lh2.8537481231377161534" id="1293812887158041263" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="mouit" />
+      <link role="inputState" roleId="7lh2.8537481231377264205" targetNodeId="1293812887158041268" resolveInfo="led1On" />
+      <node role="states" roleId="7lh2.8537481231377188753" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="1293812887158041268" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="led1On" />
+        <property name="duration" nameId="7lh2.6639211919511842967" value="1000" />
+        <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="1293812887158041269" nodeInfo="ng">
+          <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="1293812887158041277" resolveInfo="led1_on" />
+        </node>
+        <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="1293812887158041270" nodeInfo="ng">
+          <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="1293812887158041281" resolveInfo="led2_off" />
+        </node>
+      </node>
+      <node role="states" roleId="7lh2.8537481231377188753" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="1293812887158041271" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="led2On" />
+        <property name="duration" nameId="7lh2.6639211919511842967" value="1000" />
+        <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="1293812887158041272" nodeInfo="ng">
+          <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="1293812887158041278" resolveInfo="led1_off" />
+        </node>
+        <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="1293812887158041273" nodeInfo="ng">
+          <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="1293812887158041280" resolveInfo="led2_on" />
+        </node>
+      </node>
+      <node role="states" roleId="7lh2.8537481231377188753" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="1293812887158041406" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="both" />
+        <property name="duration" nameId="7lh2.6639211919511842967" value="2000" />
+        <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="1293812887158041415" nodeInfo="ng">
+          <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="8716409480409362768" resolveInfo="led1_on" />
+        </node>
+        <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="1293812887158041420" nodeInfo="ng">
+          <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="8716409480409362785" resolveInfo="led2_on" />
+        </node>
+      </node>
+      <node role="transitions" roleId="7lh2.8537481231377188755" type="7lh2.TimedStateToState" typeId="7lh2.8716409480408634813" id="1293812887158041274" nodeInfo="ng">
+        <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="1293812887158041268" resolveInfo="led1On" />
+        <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="1293812887158041271" resolveInfo="led2On" />
+      </node>
+      <node role="transitions" roleId="7lh2.8537481231377188755" type="7lh2.TimedStateToState" typeId="7lh2.8716409480408634813" id="1293812887158041275" nodeInfo="ng">
+        <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="1293812887158041271" resolveInfo="led2On" />
+        <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="1293812887158041406" resolveInfo="both" />
+      </node>
+      <node role="outputs" roleId="7lh2.8537481231377213635" type="7lh2.MacroTimedOutput" typeId="7lh2.8537481231377264202" id="1293812887158041426" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="from_mouit" />
+        <link role="source" roleId="7lh2.8537481231377264203" targetNodeId="1293812887158041406" resolveInfo="both" />
+      </node>
+    </node>
+    <node role="macros" roleId="7lh2.8537481231377265311" type="7lh2.Macro" typeId="7lh2.8537481231377161534" id="1293812887158041367" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="pouit" />
+      <link role="inputState" roleId="7lh2.8537481231377264205" targetNodeId="1293812887158041723" resolveInfo="l1" />
+      <node role="transitions" roleId="7lh2.8537481231377188755" type="7lh2.TimedStateToState" typeId="7lh2.8716409480408634813" id="1293812887158041738" nodeInfo="ng">
+        <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="1293812887158041723" resolveInfo="l1" />
+        <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="1293812887158041752" resolveInfo="l2" />
+      </node>
+      <node role="transitions" roleId="7lh2.8537481231377188755" type="7lh2.TimedStateToState" typeId="7lh2.8716409480408634813" id="1293812887158041770" nodeInfo="ng">
+        <link role="source" roleId="7lh2.8716409480408634814" targetNodeId="1293812887158041752" resolveInfo="l2" />
+        <link role="target" roleId="7lh2.1293812887163194082" targetNodeId="1293812887158041723" resolveInfo="l1" />
+      </node>
+      <node role="states" roleId="7lh2.8537481231377188753" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="1293812887158041723" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="l1" />
+        <property name="duration" nameId="7lh2.6639211919511842967" value="1000" />
+        <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="1293812887158041734" nodeInfo="ng">
+          <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="1293812887158041281" resolveInfo="led2_off" />
+        </node>
+        <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="1293812887158041730" nodeInfo="ng">
+          <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="1293812887158041277" resolveInfo="led1_on" />
+        </node>
+      </node>
+      <node role="states" roleId="7lh2.8537481231377188753" type="7lh2.TimedState" typeId="7lh2.6639211919511842966" id="1293812887158041752" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="l2" />
+        <property name="duration" nameId="7lh2.6639211919511842967" value="1000" />
+        <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="1293812887158041758" nodeInfo="ng">
+          <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="1293812887158041278" resolveInfo="led1_off" />
+        </node>
+        <node role="actions" roleId="7lh2.1557391422455299271" type="7lh2.OutputEventReference" typeId="7lh2.8204163728062375913" id="1293812887158041763" nodeInfo="ng">
+          <link role="event" roleId="7lh2.8204163728062375914" targetNodeId="1293812887158041280" resolveInfo="led2_on" />
+        </node>
+      </node>
+    </node>
+    <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.OutputBrick" typeId="7lh2.2797755123794704628" id="1293812887158041276" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="led1" />
+      <property name="pin" nameId="7lh2.2797755123794647119" value="10" />
+      <node role="events" roleId="7lh2.8204163728062398983" type="7lh2.OutputEvent" typeId="7lh2.2797755123794774345" id="1293812887158041277" nodeInfo="ng">
+        <property name="type" nameId="7lh2.8204163728062375387" value="HIGH" />
+        <property name="name" nameId="tpck.1169194664001" value="led1_on" />
+      </node>
+      <node role="events" roleId="7lh2.8204163728062398983" type="7lh2.OutputEvent" typeId="7lh2.2797755123794774345" id="1293812887158041278" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="led1_off" />
+      </node>
+    </node>
+    <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.OutputBrick" typeId="7lh2.2797755123794704628" id="1293812887158041279" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="led2" />
+      <property name="pin" nameId="7lh2.2797755123794647119" value="11" />
+      <node role="events" roleId="7lh2.8204163728062398983" type="7lh2.OutputEvent" typeId="7lh2.2797755123794774345" id="1293812887158041280" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="led2_on" />
+        <property name="type" nameId="7lh2.8204163728062375387" value="HIGH" />
+      </node>
+      <node role="events" roleId="7lh2.8204163728062398983" type="7lh2.OutputEvent" typeId="7lh2.2797755123794774345" id="1293812887158041281" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="led2_off" />
+      </node>
+    </node>
+    <node role="components" roleId="7lh2.2797755123794736509" type="7lh2.InputBrick" typeId="7lh2.2797755123794694657" id="1293812887158041282" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="button" />
+      <property name="pin" nameId="7lh2.2797755123794647119" value="9" />
+      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="1293812887158041283" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="press" />
+        <property name="type" nameId="7lh2.8204163728062375387" value="HIGH" />
+      </node>
+      <node role="events" roleId="7lh2.8204163728062227013" type="7lh2.InputEvent" typeId="7lh2.2797755123794766767" id="1293812887158041284" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="release" />
+      </node>
+    </node>
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToMacro" typeId="7lh2.8537481231380241488" id="1293812887158041285" nodeInfo="ng">
+      <link role="target" roleId="7lh2.1293812887161528407" targetNodeId="1293812887158041263" resolveInfo="mouit" />
+      <link role="source" roleId="7lh2.8537481231380473719" targetNodeId="1293812887158041257" resolveInfo="start" />
+      <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="1293812887158041286" nodeInfo="ng">
+        <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="1293812887158041283" resolveInfo="press" />
+      </node>
+      <node role="outputsTransitions" roleId="7lh2.1293812887161528401" type="7lh2.MacroOutputReference" typeId="7lh2.8537481231380241752" id="1293812887158042293" nodeInfo="ng">
+        <link role="source" roleId="7lh2.8537481231380241782" targetNodeId="1293812887158041426" resolveInfo="from_mouit" />
+        <link role="target" roleId="7lh2.8537481231380241780" targetNodeId="1293812887158042295" resolveInfo="middle" />
+      </node>
+    </node>
+    <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.TimedStateToMacro" typeId="7lh2.1293812887158123363" id="1293812887158251146" nodeInfo="ng">
+      <link role="source" roleId="7lh2.1293812887158123405" targetNodeId="1293812887158042295" resolveInfo="middle" />
+      <link role="target" roleId="7lh2.1293812887161528407" targetNodeId="1293812887158041367" resolveInfo="pouit" />
     </node>
   </root>
 </model>

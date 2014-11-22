@@ -120,5 +120,95 @@
     </dependencies>
     <rename id="7lh2.8716409480408612368" type="CHILD" from="ac" to="finishedEvent" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="19" />
+    </dependencies>
+    <rename id="7lh2.8537481231377161534" type="CONCEPT" from="Macro" to="DefineMacro" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="20" />
+    </dependencies>
+    <rename id="7lh2.8537481231377161534" type="CONCEPT" from="DefineMacro" to="Macro" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="21" />
+    </dependencies>
+    <rename id="7lh2.8537481231377213786" type="CHILD" from="t" to="triggers" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="22" />
+    </dependencies>
+    <rename id="7lh2.8537481231377238908" type="REFERENCE" from="s" to="source" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="23" />
+    </dependencies>
+    <rename id="7lh2.8537481231377265311" type="CHILD" from="ma" to="macros" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="24" />
+    </dependencies>
+    <rename id="7lh2.8204163728062227013" type="CHILD" from="events" to="lowEvent" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="25" />
+    </dependencies>
+    <rename id="7lh2.8537481231380241488" type="CONCEPT" from="MacroTransition" to="TransitionToMacro" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="26" />
+    </dependencies>
+    <rename id="7lh2.8537481231386933236" type="REFERENCE" from="placeholder" to="notused" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="27" />
+    </dependencies>
+    <rename id="7lh2.8537481231380241488" type="CONCEPT" from="TransitionToMacro" to="BasicTransitionToMacro" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="28" />
+    </dependencies>
+    <rename id="7lh2.8537481231380241488" type="CONCEPT" from="BasicTransitionToMacro" to="BasicStateToMacro" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="29" />
+    </dependencies>
+    <rename id="7lh2.1293812887158123363" type="CONCEPT" from="TimedTransitionToMacro" to="TimedStateToMacro" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="30" />
+    </dependencies>
+    <rename id="7lh2.1293812887161525427" type="CONCEPT" from="TransitionStateToMacro" to="StateToMacroTransition" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="31" />
+    </dependencies>
+    <rename id="7lh2.8716409480408634813" type="CONCEPT" from="TimedTransition" to="TimedStateToState" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="32" />
+    </dependencies>
+    <rename id="7lh2.8716409480408634068" type="CONCEPT" from="BasicTransition" to="BasicStateToState" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="7lh2" modelUID="r:0857ee5b-1179-47a9-8690-5930320482b4(ArduinoML.structure)" version="33" />
+    </dependencies>
+    <rename id="7lh2.8537481231380241752" type="CONCEPT" from="MacroOutputTransition" to="MacroOutputReference" />
+  </StructureModification>
 </history>
 
