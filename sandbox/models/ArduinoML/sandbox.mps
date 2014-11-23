@@ -770,8 +770,8 @@
     <property name="name" nameId="tpck.1169194664001" value="Multi_state_alarm_macro" />
     <link role="initState" roleId="7lh2.3146970967281169613" targetNodeId="225294716810778892" resolveInfo="alarmOff" />
     <node role="transitions" roleId="7lh2.8204163728061922018" type="7lh2.BasicStateToMacro" typeId="7lh2.8537481231380241488" id="225294716810779373" nodeInfo="ng">
-      <link role="source" roleId="7lh2.8537481231380473719" targetNodeId="2901231351579480086" resolveInfo="alarmOff" />
       <link role="target" roleId="7lh2.1293812887161528407" targetNodeId="225294716810778950" resolveInfo="pushButton" />
+      <link role="source" roleId="7lh2.8537481231380473719" targetNodeId="225294716810778892" resolveInfo="alarmOff" />
       <node role="triggers" roleId="7lh2.8204163728062312727" type="7lh2.InputEventReference" typeId="7lh2.8204163728062375845" id="225294716810779388" nodeInfo="ng">
         <link role="event" roleId="7lh2.8204163728062375873" targetNodeId="225294716810778898" resolveInfo="press" />
       </node>
